@@ -1,0 +1,91 @@
+/* Tema pink & font miring */
+body {
+  background: #ffe4ec;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, p, a, button {
+  font-style: italic;
+}
+
+.hearts-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #ffe4ec;
+  background-image:
+    radial-gradient(#ff99bb 10px, transparent 11px),
+    radial-gradient(#ff99bb 10px, transparent 11px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
+
+/* Kontainer sentral */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Animasi kucing + kelinci di pinggir */
+.pet {
+  position: absolute;
+  bottom: 10px;
+  width: 80px;
+  animation: bounce 3s ease-in-out infinite;
+}
+.pet.cat { left: 0; }
+.pet.rabbit { right: 0; }
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
+}
+
+/* Hiasan love di pinggir */
+.decoration {
+  position: absolute;
+  font-size: 2rem;
+  color: #ff87b0;
+}
+.decoration.top-left { top: 5px; left: 10px; }
+.decoration.bottom-right { bottom: 5px; right: 10px; }
+
+/* Long text */
+.longtext {
+  background: rgba(255,255,255,0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* Tombol link */
+.btn-link {
+  display: inline-block;
+  background: #ffc1d9;
+  color: #800040;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin:0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn-link:hover {
+  background: #ffa2c5;
+}
+
+.hearts-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #ffe4ec;
+  background-image:
+    radial-gradient(#ff99bb 10px, transparent 11px),
+    radial-gradient(#ff99bb 10px, transparent 11px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
